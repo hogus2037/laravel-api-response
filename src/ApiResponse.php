@@ -206,21 +206,23 @@ trait ApiResponse
     /**
      * @param string $message
      * @param int $code
+     * @param array|string|int|null $data
      * @return \Illuminate\Http\JsonResponse
      */
-    public function responseSuccess($message = 'success', $code = 0)
+    public function responseSuccess($message = 'success', $code = 0, $data = null)
     {
-        return $this->message($message)->code($code)->response();
+        return $this->message($message)->code($code)->response($data);
     }
 
     /**
      * @param string $message
      * @param int $code
+     * @param array|string|int|null $data
      * @return \Illuminate\Http\JsonResponse
      */
-    public function responseFailed($message = 'failed', $code = 1)
+    public function responseFailed($message = 'failed', $code = 1, $data = null)
     {
-        return $this->message($message)->code($code)->response();
+        return $this->message($message)->code($code)->response($data);
     }
 
     /**
