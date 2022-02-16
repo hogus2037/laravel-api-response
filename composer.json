@@ -9,20 +9,12 @@
         }
     ],
     "require": {
-        "php": "^7.3|^8.0",
-        "laravel/framework": "^8.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^9.3.3"
+        "php": "^8.0",
+        "laravel/framework": "^9.0"
     },
     "autoload": {
         "psr-4": {
             "Hogus\\Response\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
         }
     }
 }
